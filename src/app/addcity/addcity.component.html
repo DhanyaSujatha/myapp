@@ -1,0 +1,9 @@
+
+ <form (ngSubmit)="onSubmit(f)" #f="ngForm" class="search-form" fxLayout fxLayoutAlign="center center" fxLayoutGap="10px">
+      <mat-form-field class="city-name">
+    <input class="form-control" type="text" matInput placeholder="City Name" name="city"  ngModel #city required>
+  </mat-form-field>
+  <mat-form-field><button mat-icon-button color="primary" type= "submit" [disabled]="f.invalid">
+    <mat-icon>search</mat-icon></button></mat-form-field>
+    </form>     
+

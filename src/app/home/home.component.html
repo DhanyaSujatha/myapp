@@ -1,0 +1,40 @@
+<mat-tab-group>
+    <mat-tab label="Weather Now"> 
+        <section class="weather" fxLayout fxLayoutAlign="center center">
+
+    <mat-card fxFlex.xs="500%" fxFlex="500px" flexLayoutAlign="center center"[ngStyle]="{backgroundColor:state=='snow'?'Red':'Black'}" >
+        <div class= "info" flexLayoutAlign="center center"  >
+                <h1 >{{city}}</h1>
+                <h2 >{{state}}</h2>
+                <h3>{{temp}}℃</h3>
+        </div> 
+           
+        
+    </mat-card>
+</section> </mat-tab>
+    <mat-tab label="3Hours Forecast">
+            <section class="forecast" fxLayout fxLayoutAlign="center center">
+                    <mat-card fxFlex.xs="500%" fxFlex="500px" >
+                        <div class= "forecast-info" flexLayoutAlign="center center">
+                    <p>
+                    {{day1}}℃<br><hr>
+                    {{day2}}℃<br><hr>
+                    {{day3}}℃<br><hr>
+                    {{day4}}℃<br><hr>
+                    {{day5}}℃<br><hr>
+                    {{day6}}℃<br><hr>
+                    {{day7}}℃<br><hr>
+                    {{day8}}℃<br><hr>
+                    {{day9}}℃<br><hr>
+                    {{day10}}℃<br>
+                    </p>
+                   </div> 
+                   </mat-card>
+                   </section> </mat-tab>
+    
+  </mat-tab-group>
+    
+
+  
+
+
