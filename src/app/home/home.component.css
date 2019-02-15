@@ -1,31 +1,32 @@
-
+.weatherNow{
+    padding:20px;
+}
 
 .info{
     text-align: center;
     padding: .5px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
+    color: darkgray;
     
 }
 h1{
     font-size: 35px;
     }
-.forecast{
-    padding: 10px;
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
 
-}
 .sun{
     text-align: center;
+    color: bisque;
 }
 .wind{
     text-align: center;
+    color: bisque;
 }
 .description{
-    padding: 50px;
-}
+    padding: 1px;
+    }
 .forecast{
     padding:200px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
     
 }

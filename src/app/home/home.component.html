@@ -1,14 +1,15 @@
     <mat-tab-group>
     <mat-tab label="Weather Now" > 
-            
-        <div class="weather" fxLayout fxLayoutAlign="center center" 
-        [ngStyle]="{backgroundImage:getImg(),background:'no-repeat',backgroundSize:'cover'}">
+         <section class="weatherNow" [ngStyle]="{'background-image': getUrl(),background:'no-repeat',backgroundSize:'cover'}">   
+        <div class="weather" fxLayout fxLayoutAlign="center center" >
+        <mat-card [ngStyle]="{backgroundImage:getImg(),background:'no-repeat',backgroundSize:'cover', width:'50%'}">
 
         <div class= "info" flexLayoutAlign="center center">
             <h1><font size=25>{{city}}</font></h1>
             <h2><font size=5>{{state}}</font></h2>
             <h3><font size=55>{{temp}}℃</font></h3>
         </div> 
+    </mat-card>
     </div>
 
 <div class="description" >
@@ -37,7 +38,10 @@
             </mat-card>
             
        
-        </div></mat-tab>
+        </div>
+        </section>
+    </mat-tab>
+        
     <mat-tab label="3Hours Forecast">
     <section class="forecast" [ngStyle]="{'background-image': getUrl(),background:'no-repeat',backgroundSize:'cover'}">
             <mat-card >
