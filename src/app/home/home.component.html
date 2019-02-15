@@ -1,38 +1,117 @@
-<mat-tab-group>
-    <mat-tab label="Weather Now"> 
-        <section class="weather" fxLayout fxLayoutAlign="center center">
+    <mat-tab-group>
+    <mat-tab label="Weather Now" > 
+            
+        <div class="weather" fxLayout fxLayoutAlign="center center" 
+        [ngStyle]="{background:getImg()}">
 
-    <mat-card fxFlex.xs="500%" fxFlex="500px" flexLayoutAlign="center center"[ngStyle]="{backgroundColor:state=='snow'?'Red':'Black'}" >
-        <div class= "info" flexLayoutAlign="center center"  >
-                <h1 >{{city}}</h1>
-                <h2 >{{state}}</h2>
-                <h3>{{temp}}℃</h3>
+        <div class= "info" flexLayoutAlign="center center">
+            <h1><font size=25>{{city}}</font></h1>
+            <h2><font size=5>{{state}}</font></h2>
+            <h3><font size=55>{{temp}}℃</font></h3>
         </div> 
-           
-        
-    </mat-card>
-</section> </mat-tab>
+    </div>
+
+<div class="description" [ngStyle]="{background:getImg(),background:no-repeat}">
+    <mat-card [ngStyle]="{background:Img()}">
+        <p fxLayoutAlign="center center">Today: {{state}} currently.It's {{temp}}℃. The high today was forecast as {{tempMax}}℃.</p><hr>
+   <section class="sun" >
+    <div class="sun1" flexLayout="row" fxLayoutGap="20px" fxFlex>
+                    <mat-card-subtitle>Sunrise</mat-card-subtitle>
+                    <mat-card-title>{{rise}}</mat-card-title>
+            </div>
+            <div flexLayout="row" fxLayoutGap="20px" fxFlex>
+                    <mat-card-subtitle>Sunset</mat-card-subtitle>
+                    <mat-card-title>{{set}}</mat-card-title>
+                    </div>
+   </section><hr>
+   <section class="wind">
+                    <div class="wind1" flexLayout="row" fxLayoutGap="20px" fxFlex>
+                            <mat-card-subtitle>Wind</mat-card-subtitle>
+                            <mat-card-title>{{wind}}km/h</mat-card-title>
+                    </div>
+                    <div flexLayout="row" fxLayoutGap="20px" fxFlex>
+                            <mat-card-subtitle>Feels Like</mat-card-subtitle>
+                            <mat-card-title>{{like}}℃</mat-card-title>
+                            </div>
+                </section>
+            </mat-card>
+            
+       
+        </div></mat-tab>
     <mat-tab label="3Hours Forecast">
-            <section class="forecast" fxLayout fxLayoutAlign="center center">
-                    <mat-card fxFlex.xs="500%" fxFlex="500px" >
-                        <div class= "forecast-info" flexLayoutAlign="center center">
-                    <p>
-                    {{day1}}℃<br><hr>
-                    {{day2}}℃<br><hr>
-                    {{day3}}℃<br><hr>
-                    {{day4}}℃<br><hr>
-                    {{day5}}℃<br><hr>
-                    {{day6}}℃<br><hr>
-                    {{day7}}℃<br><hr>
-                    {{day8}}℃<br><hr>
-                    {{day9}}℃<br><hr>
-                    {{day10}}℃<br>
-                    </p>
-                   </div> 
-                   </mat-card>
-                   </section> </mat-tab>
+    <section class="forecast" [ngStyle]="{'background-image': getUrl()}">
+            <mat-card >
+             <div class="forecast-info">
+            <mat-card-content fxLayoutGap="20px" >
+                <div fxLayout="row" fxLayoutAlign="left" fxFlex>
+                      
+                     <p>{{day1Name}}<br>
+                    {{day1State}}<br>
+                <strong><font size=5>{{day1Temp}}℃</font></strong></p></div>
+                <div flexLayout="row" fxFlex>
+                        
+                        <p>{{day2Name}}<br>
+                            {{day2State}}<br>
+                        <strong><font size=5>{{day2Temp}}℃</font></strong></p></div>
+                        
+                <div flexLayout="row" fxFlex>
+                        
+                        <p>{{day3Name}}<br>
+                            {{day3State}}<br>
+                        <strong><font size=5>{{day3Temp}}℃</font></strong></p></div>
+                        
+                <div flexLayout="row" fxFlex>
+                        
+                        <p>{{day4Name}}<br>
+                            {{day4State}}<br>
+                        <strong><font size=5>{{day4Temp}}℃</font></strong></p></div>
+               
+                <div flexLayout="row" fxFlex>
+                        
+                        <p>{{day5Name}}<br>
+                            {{day5State}}<br>
+                        <strong><font size=5>{{day5Temp}}℃</font></strong></p></div>
+                
+                <div flexLayout="row" fxFlex>
+                        
+                        <p>{{day6Name}}<br>
+                            {{day6State}}<br>
+                        <strong><font size=5>{{day6Temp}}℃</font></strong></p></div>
+                
+                <div flexLayout="row" fxFlex>
+                        
+                        <p>{{day7Name}}<br>
+                            {{day7State}}<br>
+                        <strong><font size=5>{{day7Temp}}℃</font></strong></p></div>
+                
+                <div flexLayout="row" fxFlex>
+                        
+                        <p>{{day8Name}}<br>
+                            {{day8State}}<br>
+                        <strong><font size=5>{{day8Temp}}℃</font></strong></p></div>
+               
+                <div flexLayout="row" fxFlex>
+                        
+                        <p>{{day9Name}}<br>
+                            {{day9State}}<br>
+                        <strong><font size=5>{{day9Temp}}℃</font></strong></p></div>
+                
+                <div flexLayout="row" fxFlex>
+                        
+                        <p>{{day10Name}}<br>
+                            {{day10State}}<br>
+                        <strong><font size=5>{{day10Temp}}℃</font></strong></p></div>
+               
+                
+                    </mat-card-content>
+                </div>
+                
+                </mat-card>
+                    
+        </section> </mat-tab>
     
   </mat-tab-group>
+
     
 
   

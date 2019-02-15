@@ -1,27 +1,31 @@
-.weather{
-    padding:100px;
-    background-color: blueviolet;
-     
-}
+
 
 .info{
     text-align: center;
     padding: .5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: aliceblue;
     
 }
 h1{
     font-size: 35px;
-    color: blanchedalmond;
-}
-h2{
-    font-size:15px;
-    color: blanchedalmond;
-}
-h3{
-    font-size: 50px;
-    color: blanchedalmond;
-}
-.forecast-info{
+    }
+.forecast{
+    padding: 10px;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
+
+}
+.sun{
+    text-align: center;
+}
+.wind{
+    text-align: center;
+}
+.description{
+    padding: 50px;
+}
+.forecast{
+    padding:200px;
+    
 }
