@@ -106,10 +106,10 @@ const days=['Sun','Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 }
 
 getImg(){
-  return this.state =='Snow' ? "url('https://media.giphy.com/media/7Bgpw7PwdxoDC/giphy.gif')" : this.state =='Clear' ? "url('https://media1.giphy.com/media/u01ioCe6G8URG/giphy.gif')":this.state =='Rain' ? "url('http://www.mytinyphone.com/uploads/users/leblanc7/395572.gif')":this.state =='Clouds' ? "url('https://thumbs.gfycat.com/ElectricAltruisticDore-size_restricted.gif')":'transparent';
+  return this.state =='Snow' ? "url('https://media.giphy.com/media/7Bgpw7PwdxoDC/giphy.gif')" : this.state =='Clear' ? "url('https://media1.giphy.com/media/u01ioCe6G8URG/giphy.gif')":this.state =='Rain' ? "url('http://www.mytinyphone.com/uploads/users/leblanc7/395572.gif')":this.state =='Clouds' ? "url('https://thumbs.gfycat.com/ElectricAltruisticDore-size_restricted.gif')": this.state =='Clear' ? "url('https://media1.giphy.com/media/u01ioCe6G8URG/giphy.gif')":this.state =='Rain' ? "url('http://www.mytinyphone.com/uploads/users/leblanc7/395572.gif')":this.state =='Mist' ? "url('https://media.giphy.com/media/yhZr5Wx7CBFbq/giphy.gif')": 'transparent';
 }
 Img(){
-  return this.state =='Snow' ? "url('https://images-na.ssl-images-amazon.com/images/I/61xqNtYlNnL._SY355_.jpg')" : this.state =='Clear' ? "url('https://ak5.picdn.net/shutterstock/videos/4044025/thumb/1.jpg')" :this.state =='Rain' ? "url('http://www.rcinet.ca/eye-on-the-arctic/wp-content/uploads/sites/30/2017/08/rain-expected-in-lapland-as-sun-shines-over-finland-2-1024x678.jpg')" : this.state =='Clouds' ? "url('https://www.southwalesargus.co.uk/resources/images/5360796.jpg?display=1&htype=0&type=responsive-gallery')":'transparent';
+  return this.state =='Snow' ? "url('https://images-na.ssl-images-amazon.com/images/I/61xqNtYlNnL._SY355_.jpg')" : this.state =='Clear' ? "url('https://ak5.picdn.net/shutterstock/videos/4044025/thumb/1.jpg')" :this.state =='Rain' ? "url('http://www.rcinet.ca/eye-on-the-arctic/wp-content/uploads/sites/30/2017/08/rain-expected-in-lapland-as-sun-shines-over-finland-2-1024x678.jpg')" : this.state =='Clouds' ? "url('https://www.southwalesargus.co.uk/resources/images/5360796.jpg?display=1&htype=0&type=responsive-gallery')":this.state =='Mist' ? "url('https://vignette.wikia.nocookie.net/demigodshaven/images/f/f5/Mist.jpg/revision/latest?cb=20110102163040')":'transparent';
 }
 getUrl(){
   return "url('http://www.bviddm.com/wp-content/uploads/2015/10/weather-forecast-640x465.jpg')";

@@ -2,7 +2,7 @@
     <mat-tab label="Weather Now" > 
             
         <div class="weather" fxLayout fxLayoutAlign="center center" 
-        [ngStyle]="{background:getImg()}">
+        [ngStyle]="{backgroundImage:getImg(),background:'no-repeat',backgroundSize:'cover'}">
 
         <div class= "info" flexLayoutAlign="center center">
             <h1><font size=25>{{city}}</font></h1>
@@ -11,7 +11,7 @@
         </div> 
     </div>
 
-<div class="description" [ngStyle]="{background:getImg(),background:no-repeat}">
+<div class="description" >
     <mat-card [ngStyle]="{background:Img()}">
         <p fxLayoutAlign="center center">Today: {{state}} currently.It's {{temp}}℃. The high today was forecast as {{tempMax}}℃.</p><hr>
    <section class="sun" >
@@ -39,11 +39,11 @@
        
         </div></mat-tab>
     <mat-tab label="3Hours Forecast">
-    <section class="forecast" [ngStyle]="{'background-image': getUrl()}">
+    <section class="forecast" [ngStyle]="{'background-image': getUrl(),background:'no-repeat',backgroundSize:'cover'}">
             <mat-card >
              <div class="forecast-info">
             <mat-card-content fxLayoutGap="20px" >
-                <div fxLayout="row" fxLayoutAlign="left" fxFlex>
+                <div fxLayout="row" fxLayoutAlign="left" >
                       
                      <p>{{day1Name}}<br>
                     {{day1State}}<br>

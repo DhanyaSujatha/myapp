@@ -31,6 +31,7 @@ import { RouterModule } from '@angular/router';
     SignupComponent,
     LogoutComponent
     
+    
    
    ],
   imports: [
