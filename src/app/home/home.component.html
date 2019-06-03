@@ -1,10 +1,18 @@
     <mat-tab-group>
     <mat-tab label="Weather Now" > 
+        <section>
+            <div class="cityname" fxLayout="column" fxLayoutAlign="center center">
+            <label for="my-city" class="sr-only"><strong>Enter Your City</strong></label>
+                <input type="text" class="form-control" [(ngModel)]="cityName">
+                 <p>{{cityName}}</p>
+                 <button mat-raised-button color="primary" (click)="addCity()">Add City</button>
+                </div>  
+    </section>
          <section class="weatherNow" [ngStyle]="{'background-image': getUrl(),background:'no-repeat',backgroundSize:'cover'}">   
         <div class="weather" fxLayout fxLayoutAlign="center center" >
         <mat-card [ngStyle]="{backgroundImage:getImg(),background:'no-repeat',backgroundSize:'cover', width:'50%'}">
 
-        <div class= "info" flexLayoutAlign="center center">
+        <div class= "info" fxLayout="column" fxLayoutAlign="center center">
             <h1><font size=25>{{city}}</font></h1>
             <h2><font size=5>{{state}}</font></h2>
             <h3><font size=55>{{temp}}℃</font></h3>
